@@ -1,0 +1,35 @@
+[user]
+	name = taea
+	email = igiari@gmail.com
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactvie = auto
+  grep = auto
+[status]
+  diff = auto
+[branch]
+    diff = auto
+[core]
+  editor = vim
+  excludesfile = ~/.gitignore
+  autocrlf = input
+[push]
+  default = tracking
+[tig "bind"]
+  generic = g move-first-line
+  generic = G move-last-line
+[alias]
+	co = checkout
+	ci = commit -v		
+	st = status
+	br = branch
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	tr = log --graph --pretty='format:%C(yellow)%h%Creset %s %Cgreen(%an)%Creset %Cred%d%Creset'
+	pr = pull --rebase
+	url = config --get remote.origin.url
+	a = add
+	g = grep
+[credential]
+	helper = osxkeychain
