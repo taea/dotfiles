@@ -221,4 +221,4 @@ alias mvim='$HOME/shellscripts/mvim.sh'
 
 alias mvi="mvim --remote-tab-silent"
 
-export PATH="/Users/crowly/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
