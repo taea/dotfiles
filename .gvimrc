@@ -1,7 +1,7 @@
 scriptencoding cp932
 
 "load colorscheme
-colorscheme mycolor
+colorscheme solarized
 "colorscheme railscasts2
 
 " hilight searched chars
