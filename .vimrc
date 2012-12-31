@@ -1,4 +1,4 @@
-set rtp+=~/.vim/bundle/vundle
+set rtp+=~/.vim/vundle
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
