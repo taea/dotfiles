@@ -213,3 +213,10 @@ vnoremap <silent> <C-p> "0p<CR>
 
 " :e でカレントディレクトリファイル開く
 map :e :e<Space><C-x>
+
+" :e でカレントウィンドウのみカーソルラインを有効に
+  augroup cch
+    autocmd! cch
+    autocmd WinLeave * set nocursorline nocursorcolumn
+    autocmd WinEnter,BufRead * set cursorline cursorcolumn
+  augroup END
