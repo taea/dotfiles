@@ -26,6 +26,10 @@ alias g='git'
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git svn
 zstyle ':vcs_info:*' formats '%{'${fg[red]}'%}(%s %b) %{'$reset_color'%}'
+zstyle ':vcs_info:git:*' check-for-changes true
+zstyle ':vcs_info:git:*' stagedstr "+"
+zstyle ':vcs_info:git:*' unstagedstr "*"
+zstyle ':vcs_info:*' formats '%{${fg[red]}%}(%s %b%{${fg[cyan]}%}%c%u%{${fg[red]}%}) %{$reset_color%}'
 
 setopt prompt_subst
 precmd () {
