@@ -32,3 +32,5 @@
   g = grep
 [credential]
   helper = osxkeychain
+[github]
+	user = taea
