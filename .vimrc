@@ -69,9 +69,10 @@ colorscheme vividchalk
 
 "" Ruby, Ruby on Rails, Sinatraなどの開発用オプション
 " 通常、tabはスペース4つ分
-au BufNewFile,BufRead * set tabstop=4 shiftwidth=4
+au BufNewFile,BufRead * set tabstop=2 shiftwidth=2
 " erb/html/yml/rbの場合はスペース2つ分
 au BufNewFile,BufRead *.html.erb set tabstop=2 shiftwidth=2 expandtab
+au BufNewFile,BufRead *.css. set tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.rb set tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.rhtml set tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.html set tabstop=2 shiftwidth=2 expandtab
