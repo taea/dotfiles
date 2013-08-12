@@ -92,7 +92,7 @@ inoremap <ESC> <ESC>:set iminsert=1<CR>:set iminsert=0<CR>
 "nnoremap ? :set imsearch=1<CR>imsearch=0<CR>?
 
 " transparent window
-set transparency=9
+set transparency=8
 
 " change window size
 nnoremap <silent> <S-Left>  :5wincmd <<CR>
