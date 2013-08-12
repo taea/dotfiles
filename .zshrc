@@ -233,11 +233,14 @@ fi
 
 #mvim
 alias mvim='$HOME/shellscripts/mvim.sh'
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.
-
 alias mvi="mvim --remote-tab-silent"
 
 export PATH="$HOME/bin:$PATH"
+
+#rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
 #Enter で ls と git status を表示する
 function do_enter() {
     if [ -n "$BUFFER" ]; then
