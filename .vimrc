@@ -64,7 +64,7 @@ set laststatus=2
 " カーソル位置を表示する
 set ruler
 " カーソルのある行に下線を引く
-" set cursorline
+set cursorline
 
 " 自動インデントを有効にする
 set autoindent
