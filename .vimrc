@@ -29,6 +29,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'buftabs'
 Bundle 'TwitVim'
 Bundle 'pasela/unite-webcolorname'
+Bundle 'kana/vim-operator-replace'
 
 " 文字コードの設定
 set encoding=utf-8
