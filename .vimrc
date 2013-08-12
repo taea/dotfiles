@@ -28,6 +28,7 @@ Bundle 'hail2u/vim-css3-syntax'
 Bundle 'scrooloose/nerdtree'
 Bundle 'buftabs'
 Bundle 'TwitVim'
+Bundle 'pasela/unite-webcolorname'
 
 " 文字コードの設定
 set encoding=utf-8
