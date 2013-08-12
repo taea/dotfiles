@@ -174,7 +174,7 @@ nnoremap <Space>. :<C-u>edit ~/.vimrc<Enter>
 " Vimテクニックバイブルのお試し系
 
 " Insertのときにstatuslineの色を変える
-au InsertEnter * hi StatusLine guifg=Black guibg=Yellow gui=none ctermfg=Black ctermbg=Yellow cterm=none
+au InsertEnter * hi StatusLine guifg=Black guibg=red gui=none ctermfg=Black ctermbg=Yellow cterm=none
 au InsertLeave * hi StatusLine guifg=White guibg=DarkGray gui=none ctermfg=White ctermbg=DarkGray cterm=none
 
 set listchars=eol:$,tab:>\
