@@ -246,3 +246,4 @@ map :e :e<Space><C-x>
     autocmd WinLeave * set nocursorline nocursorcolumn
     autocmd WinEnter,BufRead * set cursorline cursorcolumn
   augroup END
+
