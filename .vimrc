@@ -16,6 +16,7 @@ Bundle 'tpope/vim-rvm'
 Bundle 'tpope/vim-haml'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'Gist.vim'
+Bundle 'slim-template/vim-slim'
 " Bundle 'yamlvim'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/unite.vim'
@@ -81,6 +82,7 @@ au BufNewFile,BufRead *.rhtml set tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.html set tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.yml set tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.haml set tabstop=2 shiftwidth=2 expandtab
+au BufNewFile,BufRead *.slim set tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.js set tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.js.coffee set tabstop=2 shiftwidth=2 expandtab
 " RailsはUTF-8で書く　
