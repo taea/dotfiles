@@ -26,6 +26,14 @@ alias cddw='cd ~/Dropbox/work/'
 alias cdds='cd ~/Dropbox/sites/'
 alias cddp='cd ~/Dropbox/public/'
 alias g='git'
+alias bx='bundle exec'
+alias bi='bundle install'
+alias bu='bundle'
+alias ap='rake assets:precompile'
+alias r='rails'
+alias kebab='ssh -v akatsuka@tae.grooves.jp -R 4300:127.0.0.1:3000 sleep 99999'
+alias mid='middleman'
+alias mig='rake db:migrate'
 
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git svn
