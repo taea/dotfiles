@@ -9,6 +9,10 @@ colors
 autoload -U compinit
 compinit -u
 
+# auto directory pushd that you can get dirs list by cd -[tab]
+#
+setopt auto_pushd
+
 # path
 export PATH="$(brew --prefix)/bin:$PATH"
 
@@ -226,3 +230,23 @@ alias mvim='$HOME/shellscripts/mvim.sh'
 alias mvi="mvim --remote-tab-silent"
 
 export PATH="$HOME/bin:$PATH"
+#Enter で ls と git status を表示する
+function do_enter() {
+    if [ -n "$BUFFER" ]; then
+        zle accept-line
+        return 0
+    fi
+    echo
+    ls
+    # ↓おすすめ
+    # ls_abbrev
+    if [ "$(git rev-parse --is-inside-work-tree 2> /dev/null)" = 'true' ]; then
+        echo
+        echo -e "\e[0;33m--- git status ---\e[0m"
+        git status -sb
+    fi
+    zle reset-prompt
+    return 0
+}
+zle -N do_enter
+bindkey '^m' do_enter
