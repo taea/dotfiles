@@ -31,6 +31,7 @@ Bundle 'TwitVim'
 Bundle 'pasela/unite-webcolorname'
 Bundle 'kana/vim-operator-replace'
 Bundle 'lilydjwg/colorizer'
+Bundle 'ctags'
 
 " 文字コードの設定
 set encoding=utf-8
