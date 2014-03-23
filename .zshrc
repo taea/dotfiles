@@ -262,3 +262,6 @@ function do_enter() {
 }
 zle -N do_enter
 bindkey '^m' do_enter
+
+export PGDATA=/usr/local/var/postgres
+eval "$(hub alias -s)"
