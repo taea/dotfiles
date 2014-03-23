@@ -34,6 +34,7 @@ alias r='rails'
 alias kebab='ssh -v akatsuka@tae.grooves.jp -R 4300:127.0.0.1:3000 sleep 99999'
 alias mid='middleman'
 alias mig='rake db:migrate'
+alias bxm= 'bundle exec middleman'
 
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git svn
