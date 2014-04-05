@@ -242,19 +242,6 @@ export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-# 'ci'でgit commit
-function ci() {
-    if [ $# -eq 0 ]; then
-	git commit -v
-    else
-	if [ "$1" = "--amend" ]; then
-	    git commit -v --amend
-	else
-	    git commit -m "$*"
-	fi
-    fi
-}
-
 #Enter で ls と git status を表示する
 function do_enter() {
     if [ -n "$BUFFER" ]; then
