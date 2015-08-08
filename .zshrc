@@ -35,6 +35,9 @@ alias kebab='ssh -v akatsuka@tae.grooves.jp -R 4300:127.0.0.1:3000 sleep 99999'
 alias mid='middleman'
 alias mig='rake db:migrate'
 alias bxm= 'bundle exec middleman'
+alias donelist='/bin/bash -lc "cd ~/Dropbox/sites/done-list && bundle exec ruby done_list.rb"'
+alias gh='gh-open $(ghq list -p | peco)'
+alias p='cd $(ghq list -p | peco)'
 
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git svn
@@ -131,6 +134,9 @@ alias jsonview="perl -MJSON::XS -e 'print JSON::XS->new->utf8->pretty->encode(de
 
 #改行のない出力をプロンプトで上書きするのを防ぐ
 unsetopt promptcr
+
+# []をエスケープ
+unsetopt nomatch
 
 # screen auto startup
 if [ $TERM != "screen" -a "`screen -ls | grep Attache`" = "" ]; then
@@ -265,3 +271,14 @@ bindkey '^m' do_enter
 
 export PGDATA=/usr/local/var/postgres
 eval "$(hub alias -s)"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+### Git リモートブランチを一斉削除する
+alias git-comp="git checkout master && git pull"
+alias gitdb-remote="git-comp && git branch -a --merged | grep -v 'master' | grep remotes/origin | sed -e 's% *remotes/origin/%%' | xargs -I% git push origin :%"
+export PATH=$(brew --prefix)/bin:$PATH
+
+### z
+. /usr/local/etc/profile.d/z.sh

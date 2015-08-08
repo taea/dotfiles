@@ -30,7 +30,16 @@
   url = config --get remote.origin.url
   a = add
   g = grep
+  delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
 [credential]
   helper = osxkeychain
 [github]
 	user = taea
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[merge]
+  ff = false
+[pull]
+  rebase = true

@@ -89,6 +89,8 @@ au BufNewFile,BufRead *.haml set tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.slim set tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.js set tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.js.coffee set tabstop=2 shiftwidth=2 expandtab
+au BufRead,BufNewFile *.hamlc set ft=haml
+
 " RailsはUTF-8で書く　
 au User Rails* set fenc=utf-8
 let ruby_space_errors=1
@@ -248,3 +250,5 @@ map :e :e<Space><C-x>
     autocmd WinEnter,BufRead * set cursorline cursorcolumn
   augroup END
 
+" .un~ を作らない
+:set noundofile

@@ -17,7 +17,7 @@ set columns=80
 set lines=30
 
 " typography
-set guifont=Menlo:h12
+set guifont=SCPM:h16
 set linespace=3
 
 "---------------------------------------------------------------------------
