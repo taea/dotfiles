@@ -1,8 +1,15 @@
 " run pathogen as the first line of the file
 call pathogen#infect()
 
-set rtp+=~/.vim/vundle
+set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
+
+" vi との互換性OFF
+set nocompatible
+" ファイル形式の検出を無効にする
+filetype off
+" ファイル形式検出、プラグイン、インデントを ON
+filetype plugin indent on 
 
 Bundle 'gmarik/vundle'
 Bundle 'vim-ruby/vim-ruby'
@@ -82,6 +89,8 @@ au BufNewFile,BufRead * set tabstop=2 shiftwidth=2
 au BufNewFile,BufRead *.html.erb set tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.css. set tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.rb set tabstop=2 shiftwidth=2 expandtab
+au BufNewFile,BufRead *.scss set tabstop=2 shiftwidth=2 expandtab
+au BufNewFile,BufRead *.sass set tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.rhtml set tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.html set tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.yml set tabstop=2 shiftwidth=2 expandtab
@@ -89,6 +98,9 @@ au BufNewFile,BufRead *.haml set tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.slim set tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.js set tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.js.coffee set tabstop=2 shiftwidth=2 expandtab
+au BufNewFile,BufRead *.ts set tabstop=2 shiftwidth=2 expandtab
+au BufNewFile,BufRead *.php set tabstop=2 shiftwidth=2 expandtab
+au BufNewFile,BufRead *.tpl set tabstop=2 shiftwidth=2 expandtab
 au BufRead,BufNewFile *.hamlc set ft=haml
 
 " RailsはUTF-8で書く　

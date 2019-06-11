@@ -13,7 +13,7 @@
   diff = auto
 [core]
   editor = vim
-  excludesfile = ~/.gitignore
+	excludesfile = /Users/taea/.gitignore
   autocrlf = input
 [push]
   default = simple
@@ -31,8 +31,9 @@
   a = add
   g = grep
   delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
+	see = browse
 [credential]
-  helper = osxkeychain
+	helper = osxkeychain
 [github]
 	user = taea
 [filter "media"]
@@ -43,3 +44,9 @@
   ff = false
 [pull]
   rebase = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
